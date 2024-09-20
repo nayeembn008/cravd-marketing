@@ -10,20 +10,115 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="bg-secondary-50">
-    <header>
+    <header class="bg-primary-500">
       <section>
+        <!-- Banner starts here -->
         <div class="py-3 text-neut-50 text-small bg-primary-900 text-center">
           Live in Toronto, coming soon in the Bay Area!
         </div>
-        <nav></nav>
-
-        <div></div>
+        <!-- Banner ends here -->
+        <!-- Navbar starts here -->
+        <nav class="container mx-auto py-3 md:py-4 px-4 md:px-0 mb-10">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-4">
+              <img src="./asset/cravd-logo.svg" alt="Cravd logo" />
+              <div class="flex justify-center items-center">
+                <img src="./asset/location.svg" alt="" class="h-6 w-6" />
+                <select
+                  class="block bg-transparent py-1.5 pl-1 pr-2 text-neut-50 text-small focus:outline-none"
+                  name="service_area_id"
+                  id="service_area_id"
+                >
+                  <option selected="selected" value="1">
+                    Greater Toronto Area
+                  </option>
+                  <option value="2">Bay Area</option>
+                </select>
+              </div>
+            </div>
+            <div class="hidden lg:block">
+              <ul class="flex items-center gap-6">
+                <li>
+                  <a
+                    href="#"
+                    class="text-regular text-neutral-50 hover:underline"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-regular text-neutral-50 hover:underline"
+                    >Become a homechef</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="btn-tertiary btn-medium">Sign in</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-secondary btn-medium">Get started</a>
+                </li>
+              </ul>
+            </div>
+            <div class="block lg:hidden">
+              <img src="./asset/menu.svg" alt="" />
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar ends here -->
+        <!-- hero section starts here -->
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col xl:flex-row justify-between relative px-4 md:px-0 mb-32 md:mb-40"
+          >
+            <div class="xl:w-1/2 xl:pt-40 lg:pt-8 pb-12 lg:pb-24 lg:pr-10">
+              <h1 class="text-neut-50 heading-1 mb-4">
+                Book a homechef to cook in your kitchen
+              </h1>
+              <p class="text-large text-neut-50 mb-8">
+                Fresh homemade food cooked with love, right in your kitchen.
+              </p>
+              <a href="" class="btn-secondary btn-large mb-16"
+                >Book your first session</a
+              >
+              <div class="flex items-center gap-6">
+                <div class="h-[72px] w-[168px]">
+                  <img src="./img/customer-reviews.png" alt="" class="w-full" />
+                </div>
+                <div>
+                  <p class="text-large font-semibold text-neut-50">
+                    Our happy customer
+                  </p>
+                  <div class="flex gap-2 items-center">
+                    <img src="./asset/star.svg" alt="" />
+                    <p class="text-large text-neut-50">4.7 review</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- hero image desktop -->
+            <div
+              class="hidden xl:block lg:w-1/2 xl:absolute xl:top-0 xl:right-0 xl:pl-10"
+            >
+              <img src="./img/hero.png" alt="" class="w-full" />
+            </div>
+            <!-- Hero image mobile -->
+            <div class="xl:hidden pb-16">
+              <img src="./img/hero-mobile.png" alt="" class="w-full" />
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+          </div>
+        </div>
       </section>
     </header>
     <main>
+      <!-- Why cravd section starts here -->
       <section
         id="why-cravd"
         class="container mx-auto px-4 md:px-0 mb-32 md:mb-40"
@@ -37,6 +132,7 @@
           </p>
         </div>
         <div class="text-center flex flex-col md:flex-row gap-8 md:text-left">
+          <!-- Why cravd 1 starts here -->
           <div>
             <img
               src="./asset/find.svg"
@@ -54,6 +150,8 @@
               </p>
             </div>
           </div>
+          <!-- Why cravd 1 ends here -->
+          <!-- Why cravd 2 starts here -->
           <div>
             <img
               src="./asset/hire.svg"
@@ -71,6 +169,8 @@
               </p>
             </div>
           </div>
+          <!-- Why cravd 2 ends here -->
+          <!-- Why cravd 3 starts here -->
           <div>
             <img
               src="./asset/family.svg"
@@ -88,8 +188,11 @@
               </p>
             </div>
           </div>
+          <!-- Why cravd 3 ends here -->
         </div>
       </section>
+      <!-- Why cravd section ends here -->
+      <!-- How it works section starts here -->
       <section
         id="how-it-works"
         class="container mx-auto px-4 md:px-0 mb-32 md:mb-40"
@@ -97,10 +200,13 @@
         <div>
           <h2 class="heading-2 text-center mb-10 md:mb-16">How it works?</h2>
         </div>
+        <!-- How it works breakdown starts here -->
         <div class="lg:w-5/6 lg:mx-auto">
           <div
             class="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8 mb-10 md:mb-10"
           >
+            <!-- How it works 1 starts here -->
+
             <div class="order-2 md:order-1 text-center md:text-left">
               <div
                 class="w-12 h-12 flex items-center justify-center bg-primary-500 rounded-full mb-4 md:mb-4 mx-auto md:mx-0 -mt-16 md:mt-0"
@@ -121,6 +227,8 @@
               <img src="./img/preferences.png" alt="" class="w-full" />
             </div>
           </div>
+          <!-- How it works 1 ends here -->
+          <!-- How it works 2 starts here -->
           <div
             class="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8 mb-10 md:mb-10"
           >
@@ -141,6 +249,8 @@
               <img src="./img/onboard.png" alt="" class="w-full" />
             </div>
           </div>
+          <!-- How it works 2 ends here -->
+          <!-- How it works 3 starts here -->
           <div
             class="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8 mb-10 md:mb-10"
           >
@@ -163,6 +273,8 @@
               <img src="./img/homechef-match.png" alt="" class="w-full" />
             </div>
           </div>
+          <!-- How it works 3 ends here -->
+          <!-- How it works 4 starts here -->
           <div
             class="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8 mb-10 md:mb-10"
           >
@@ -185,18 +297,24 @@
               <img src="./img/subscribe.png" alt="" class="w-full" />
             </div>
           </div>
+          <!-- How it works 4 ends here -->
         </div>
+        <!-- How it works breakdown ends here -->
+
         <div class="flex justify-center items-center">
           <button class="btn-primary btn-large">Book your first session</button>
         </div>
       </section>
-      <section id="save" class="container mx-auto mb-32 md:mb-40">
+      <!-- How it works section ends here -->
+      <!-- Savings stats starts here -->
+      <section id="save" class="container mx-auto mb-32 md:mb-40 px-4 md:px-0">
         <div>
           <h2 class="heading-2 md:w-1/2 md:mx-auto text-center mb-10 md:mb-16">
             Save time and money, eat healthy
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Savings stats 1 starts here -->
           <div
             class="px-6 py-8 md:px-8 md:py-10 bg-secondary-100 border border-secondary-200 rounded-xl"
           >
@@ -206,6 +324,8 @@
               Most of our customers save 12 hours a week by using Cravd
             </p>
           </div>
+          <!-- Savings stats 1 ends here -->
+          <!-- Savings stats 2 starts here -->
           <div
             class="px-6 py-8 md:px-8 md:py-10 bg-secondary-100 border border-secondary-200 rounded-xl"
           >
@@ -215,6 +335,8 @@
               Most of our customers feel more healthy after using Cravd
             </p>
           </div>
+          <!-- Savings stats 2 ends here -->
+          <!-- Savings stats 3 starts here -->
           <div
             class="px-6 py-8 md:px-8 md:py-10 bg-secondary-100 border border-secondary-200 rounded-xl"
           >
@@ -225,9 +347,340 @@
               Cravd.
             </p>
           </div>
+          <!-- Savings stats 3 ends here -->
         </div>
       </section>
-      <section id="chefs" class="container xl:w-2/3 mx-auto">
+      <!-- Savings stats ends here -->
+
+      <!-- Pricing section starts here  -->
+      <section id="pricing" class="bg-primary-500 -mt-[740px] md:-mt-72">
+        <div
+          class="container mx-auto lg:px-0 md:mb-16 mb-32 lg:mb-40 px-4 md:px-0 pb-20 md:pb-32 pt-[760px] md:pt-60"
+        >
+          <!-- Price container -->
+          <div class="flex flex-col lg:flex-row relative mb-10 lg:mb-0">
+            <!-- Price intro and selection -->
+            <div class="lg:w-1/3 lg:pr-8">
+              <div
+                class="space-y-6 text-center lg:text-left lg:sticky top-16 mb-8 lg:mb-0"
+              >
+                <div class="space-y-6 text-center lg:text-left mb-8 md:12">
+                  <h2 class="heading-2 text-neut-50">Pricing</h2>
+                  <p class="text-neut-50 text-large">
+                    The right price for you, and your family
+                  </p>
+                </div>
+                <!-- Select no. of dishes starts here -->
+                <div class="mb-6 md:mb-8">
+                  <p class="text-neut-50 text-large">Select number of dishes</p>
+                  <div class="mt-2 grid grid-cols-3 gap-3">
+                    <label
+                      class="flex bg-primary-50 text-primary-500 hover:bg-primary-100 items-center justify-center py-3 px-3 text-large font-semibold cursor-pointer focus:outline-none rounded-full"
+                      ><input
+                        type="radio"
+                        name="dishes"
+                        value="3"
+                        class="sr-only"
+                        id="dishes-3"
+                        checked="checked"
+                      /><span id="dishes-3-label">Upto 3</span></label
+                    >
+                    <label
+                      class="flex items-center justify-center py-3 px-3 text-sm cursor-pointer focus:outline-none border border-primary-50 text-neut-50 hover:bg-primary-400 text-large font-semibold rounded-full"
+                      data-pricing-target="dishesOption"
+                      data-action="click->pricing#dishesChanged"
+                      ><input
+                        type="radio"
+                        name="dishes"
+                        value="4"
+                        class="sr-only"
+                        id="dishes-4"
+                      /><span id="dishes-4-label">4</span></label
+                    >
+                    <label
+                      class="flex items-center justify-center py-3 px-3 text-sm cursor-pointer focus:outline-none border border-primary-50 text-neut-50 hover:bg-primary-400 text-large font-semibold rounded-full"
+                      data-pricing-target="dishesOption"
+                      data-action="click->pricing#dishesChanged"
+                      ><input
+                        type="radio"
+                        name="dishes"
+                        value="5"
+                        class="sr-only"
+                        id="dishes-5"
+                      /><span id="dishes-5-label">5</span></label
+                    >
+                  </div>
+                </div>
+                <!-- Select no. of dishes ends here -->
+                <!-- Bookings per week starts here -->
+                <div>
+                  <p class="text-neut-50 text-large">
+                    Select number of bookings per week
+                  </p>
+                  <div class="mt-2 grid grid-cols-3 gap-3">
+                    <label
+                      class="flex bg-primary-50 text-primary-500 hover:bg-primary-100 items-center justify-center py-3 px-3 text-large font-semibold cursor-pointer focus:outline-none rounded-full"
+                      ><input
+                        type="radio"
+                        name="bookings"
+                        value="1"
+                        class="sr-only"
+                        id="bookings-1"
+                        checked="checked"
+                      /><span id="bookings-1-label">1</span></label
+                    >
+                    <label
+                      class="flex items-center justify-center py-3 px-3 cursor-pointer focus:outline-none border border-primary-50 text-neut-50 hover:bg-primary-400 text-large font-semibold rounded-full"
+                      ><input
+                        type="radio"
+                        name="bookings"
+                        value="2"
+                        class="sr-only"
+                        id="bookings-2"
+                      /><span id="bookings-2-label">2</span></label
+                    >
+                    <label
+                      class="flex items-center justify-center py-3 px-3 cursor-pointer focus:outline-none border border-primary-50 text-neut-50 hover:bg-primary-400 text-large font-semibold rounded-full"
+                      ><input
+                        type="radio"
+                        name="bookings"
+                        value="3"
+                        class="sr-only"
+                        id="bookings-3"
+                      /><span id="bookings-3-label">3</span></label
+                    >
+                    <label
+                      class="flex items-center justify-center py-3 px-3 cursor-pointer focus:outline-none border border-primary-50 text-neut-50 hover:bg-primary-400 text-large font-semibold rounded-full"
+                      data-pricing-target="dishesOption"
+                      data-action="click->pricing#dishesChanged"
+                      ><input
+                        type="radio"
+                        name="bookings"
+                        value="3"
+                        class="sr-only"
+                        id="bookings-4"
+                      /><span id="bookings-4-label">4</span></label
+                    >
+                    <label
+                      class="flex items-center justify-center py-3 px-3 cursor-pointer focus:outline-none border border-primary-50 text-neut-50 hover:bg-primary-400 text-large font-semibold rounded-full"
+                      ><input
+                        type="radio"
+                        name="bookings"
+                        value="5"
+                        class="sr-only"
+                        id="bookings-5"
+                      /><span id="bookings-5-label">5</span></label
+                    >
+                    <label
+                      class="flex items-center justify-center py-3 px-3 cursor-pointer focus:outline-none border border-primary-50 text-neut-50 hover:bg-primary-400 text-large font-semibold rounded-full"
+                      ><input
+                        type="radio"
+                        name="bookings"
+                        value="6"
+                        class="sr-only"
+                        id="bookings-6"
+                      /><span id="bookings-6-label">6</span></label
+                    >
+                  </div>
+                </div>
+                <!-- Bookings per week ends here -->
+                <a href="#" class="btn-secondary btn-large hidden lg:block">
+                  Book your first session
+                </a>
+              </div>
+            </div>
+            <!-- Booking type container starts here-->
+            <div
+              class="mx-auto lg:w-2/3 lg:mt-4 lg:pl-8 divide-y divide-neutral-200"
+            >
+              <div class="py-8 px-8 bg-neut-50 rounded-3xl mb-6">
+                <!-- Booking top section starts here -->
+                <div class="flex flex-row justify-between gap-6">
+                  <div>
+                    <h4 class="heading-4 mb-3">Trial Booking</h4>
+                    <p class="text-regular text-neut-400">
+                      Test the service with up to two trial bookings per
+                      household.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-large text-neut-600">
+                      <span class="heading-3 text-primary-500">$49</span
+                      >/session
+                    </p>
+                  </div>
+                </div>
+                <!-- Booking top section ends here-->
+                <!-- divider -->
+                <hr class="my-6 h-0.5 bg-neut-100" />
+                <!-- Show details starts here -->
+                <div class="flex items-center gap-2 mb-4 lg:hidden">
+                  <img src="./asset/accordian-collapsed.svg" alt="" /><a
+                    href=""
+                    class="inline-block text-primary-500 text-large font-semibold"
+                    >Show details</a
+                  >
+                </div>
+                <!-- Show details ends here -->
+                <!-- Booking details section starts here -->
+                <div class="hidden lg:block">
+                  <div class="flex gap-2 justify-start items-start">
+                    <img src="./asset/check.svg" alt="" class="mt-1" />
+                    <p class="text-neut-600 text-large">
+                      <strong>Flexibility</strong>: Test the service with up to
+                      two trial bookings per household.
+                    </p>
+                  </div>
+                  <div class="flex gap-2 justify-start items-start">
+                    <img src="./asset/check.svg" alt="" class="mt-1" />
+                    <p class="text-neut-600 text-large">
+                      <strong>Match to Top Home Chef</strong>: Connect
+                      personally with one of our top home chefs.
+                    </p>
+                  </div>
+                  <div class="flex gap-2 justify-start items-start">
+                    <img src="./asset/check.svg" alt="" class="mt-1" />
+                    <p class="text-neut-600 text-large">
+                      <strong>Customize your Flavors</strong>: Fine-tune your
+                      food and menu preferences.
+                    </p>
+                  </div>
+                </div>
+                <!-- Booking details section ends here -->
+              </div>
+              <!-- Booking trial ends here -->
+              <!-- Booking monthly starts here -->
+              <div class="py-8 px-8 bg-neut-50 rounded-3xl">
+                <!-- Booking top section starts here -->
+                <div class="flex flex-row justify-between gap-6">
+                  <div>
+                    <h4 class="heading-4 mb-3">Monthly Booking</h4>
+                    <p class="text-regular text-neut-400">
+                      Substantial discounts on per session costs when booking
+                      monthly.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-large text-neut-600">
+                      <span class="heading-3 text-primary-500">$280</span>/month
+                    </p>
+                  </div>
+                </div>
+                <!-- Booking top section ends here-->
+                <!-- divider -->
+                <hr class="my-6 h-0.5 bg-neut-100" />
+                <!-- Show details starts here -->
+                <div class="flex items-center gap-2 mb-4 lg:hidden">
+                  <img src="./asset/accordian-collapsed.svg" alt="" /><a
+                    href=""
+                    class="inline-block text-primary-500 text-large font-semibold"
+                    >Show details</a
+                  >
+                </div>
+                <!-- Show details ends here -->
+                <!-- Booking details section starts here -->
+                <div class="hidden lg:block">
+                  <div class="flex flex-col md:flex-row gap-2 mb-4">
+                    <div class="flex gap-2 items-center w-1/2">
+                      <img src="./asset/dishes.svg" alt="" />
+                      <p class="text-large text-neut-800">
+                        No. of dishes:
+                        <span id="dishes-number" class="font-semibold">3</span>
+                      </p>
+                    </div>
+                    <div class="flex gap-2 items-center w-1/2">
+                      <img src="./asset/bookings.svg" alt="" />
+                      <p class="text-large text-neut-800">
+                        No. of bookings per week:
+                        <span id="bookings-per-week" class="font-semibold"
+                          >1</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Savings stats starts here -->
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4 py-6 md:py-0 md:px-0 border border-success-200 bg-success-100 md:border-none md:bg-neut-50 rounded-3xl md:rounded-none mb-4"
+                  >
+                    <!-- Eating out expense stat starts here -->
+                    <div
+                      class="md:py-6 px-6 md:border md:border-success-200 md:bg-success-100 md:rounded-3xl flex flex-row md:flex-col justify-between"
+                    >
+                      <h5
+                        class="heading-5 text-neut-950 mb-2 order-2 md:order-1"
+                      >
+                        $100
+                      </h5>
+                      <p class="text-large text-neut-600 order-1 md:order-2">
+                        Eating out expenses
+                      </p>
+                    </div>
+                    <!-- Eating out expense stat ends here -->
+                    <!-- Time saved stat starts here -->
+                    <div
+                      class="md:py-6 px-6 md:border md:border-success-200 md:bg-success-100 md:rounded-3xl flex flex-row md:flex-col justify-between"
+                    >
+                      <h5
+                        class="heading-5 text-neut-950 mb-2 order-2 md:order-1"
+                      >
+                        90hr
+                      </h5>
+                      <p class="text-large text-neut-600 order-1 md:order-2">
+                        Time saved in hrs
+                      </p>
+                    </div>
+                    <!-- Time saved stat ends here -->
+                    <!-- Subscription saved stat starts here -->
+                    <div
+                      class="md:py-6 px-6 md:border md:border-success-200 md:bg-success-100 md:rounded-3xl flex flex-row md:flex-col justify-between"
+                    >
+                      <h5
+                        class="heading-5 text-neut-950 mb-2 order-2 md:order-1"
+                      >
+                        $129
+                      </h5>
+                      <p class="text-large text-neut-600 order-1 md:order-2">
+                        Saved for subscription
+                      </p>
+                    </div>
+                    <!-- Subscription saved stat ends here -->
+                  </div>
+                  <!-- Savings stats starts here -->
+
+                  <div class="flex gap-2 justify-start items-start">
+                    <img src="./asset/check.svg" alt="" class="mt-1" />
+                    <p class="text-neut-600 text-large">
+                      <strong>Discounted Rates</strong>: Substantial discounts
+                      on per session costs when booking monthly.
+                    </p>
+                  </div>
+                  <div class="flex gap-2 justify-start items-start">
+                    <img src="./asset/check.svg" alt="" class="mt-1" />
+                    <p class="text-neut-600 text-large">
+                      <strong>Premium Chef Access</strong>: Enjoy consistent
+                      access to our top home chefs.
+                    </p>
+                  </div>
+                </div>
+                <!-- Booking details section ends here -->
+              </div>
+            </div>
+            <!-- Booking type container ends here -->
+          </div>
+          <div class="flex items-center justify-center">
+            <a href="#" class="btn-secondary btn-large lg:hidden">
+              Book your first session
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing ends here -->
+
+      <!-- Chef section starts here -->
+      <section
+        id="chefs"
+        class="container xl:w-2/3 mx-auto mb-32 md:mb-40 px-4 md:px-0"
+      >
         <div class="md:w-3/4 text-center mb-10 md:mb16 mx-auto">
           <h2 class="heading-2 text-neut-950 mb-4">
             Experienced chefs, specializing in diverse cuisines.
@@ -315,7 +768,500 @@
           </button>
         </div>
       </section>
+      <!-- Chef section ends here -->
+      <!-- Testimonial starts here -->
+      <section
+        id="testimonials"
+        class="container mx-auto mb-32 lg:mb-40 px-4 md:px-0"
+      >
+        <h2
+          class="text-neut-950 heading-2 text-center md:w-2/3 md:mx-auto lg:w-1/2 mb-10 md:mb-16"
+        >
+          What our customers think about us?
+        </h2>
+        <!-- Testimonial container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+          <!-- Testimonial 1 starts here -->
+
+          <div
+            class="border border-secondary-100 px-10 py-10 relative rounded-3xl bg-neut-50"
+          >
+            <img
+              src="./asset/quote.svg"
+              alt=""
+              class="absolute -top-4 right-4"
+            />
+            <div class="w-20 h-20 mb-10">
+              <img src="./img/testimonial.png" alt="" class="w-full" />
+            </div>
+            <p class="text-neut-600 text-large mb-6">
+              I’ve always struggled with meal prepping and keeping up with my
+              busy schedule, but Cravd completely changed the game. Chef Jason
+              came in, took note of my dietary preferences, and prepared a
+              week’s worth of healthy, delicious meals—exactly how I like them.
+              Not only did he handle all the cooking, but he also left my
+              kitchen spotless.
+            </p>
+            <h5 class="text-neut-950 heading-5 mb-1">David M.</h5>
+            <p class="text-neut-600 text-large">Co-Founder, CEO</p>
+          </div>
+          <!-- Testimonial 1 ends here -->
+          <!-- Testimonial 2 starts here -->
+          <div
+            class="border border-secondary-100 px-10 py-10 relative rounded-3xl bg-neut-50"
+          >
+            <img
+              src="./asset/quote.svg"
+              alt=""
+              class="absolute -top-4 right-4"
+            />
+            <div class="w-20 h-20 mb-10">
+              <img src="./img/testimonial.png" alt="" class="w-full" />
+            </div>
+            <p class="text-neut-600 text-large mb-6">
+              I’ve always struggled with meal prepping and keeping up with my
+              busy schedule, but Cravd completely changed the game. Chef Jason
+              came in, took note of my dietary preferences, and prepared a
+              week’s worth of healthy, delicious meals—exactly how I like them.
+              Not only did he handle all the cooking, but he also left my
+              kitchen spotless.
+            </p>
+            <h5 class="text-neut-950 heading-5 mb-1">David M.</h5>
+            <p class="text-neut-600 text-large">Co-Founder, CEO</p>
+          </div>
+          <!-- Testimonial 2 ends here -->
+          <!-- Testimonial 3 starts here -->
+          <div
+            class="border border-secondary-100 px-10 py-10 relative rounded-3xl bg-neut-50"
+          >
+            <img
+              src="./asset/quote.svg"
+              alt=""
+              class="absolute -top-4 right-4"
+            />
+            <div class="w-20 h-20 mb-10">
+              <img src="./img/testimonial.png" alt="" class="w-full" />
+            </div>
+            <p class="text-neut-600 text-large mb-6">
+              I’ve always struggled with meal prepping and keeping up with my
+              busy schedule, but Cravd completely changed the game. Chef Jason
+              came in, took note of my dietary preferences, and prepared a
+              week’s worth of healthy, delicious meals—exactly how I like them.
+              Not only did he handle all the cooking, but he also left my
+              kitchen spotless.
+            </p>
+            <h5 class="text-neut-950 heading-5 mb-1">David M.</h5>
+            <p class="text-neut-600 text-large">Co-Founder, CEO</p>
+          </div>
+          <!-- Testimonial 3 ends here -->
+        </div>
+        <!-- Slider -->
+        <div class="flex flex-row justify-center items-center gap-6">
+          <div class="w-4 h-4 rounded-full bg-primary-500"></div>
+          <div class="w-4 h-4 rounded-full bg-primary-100"></div>
+          <div class="w-4 h-4 rounded-full bg-primary-100"></div>
+        </div>
+      </section>
+      <!-- Testimonial ends here -->
+
+      <!-- Booking starts here -->
+      <section
+        id="booking"
+        class="container mx-auto mb-32 lg:mb-40 px-4 md:px-0"
+      >
+        <div
+          class="bg-primary-500 rounded-3xl bg-cover bg-center"
+          style="background-image: url(./asset/pattern.svg)"
+        >
+          <div class="py-16 px-6 text-center lg:w-1/2 lg:mx-auto">
+            <h3 class="heading-3 text-neut-50 mb-6">Book a homechef today</h3>
+            <p class="text-large text-neut-100 mb-8">
+              Experience It Firsthand! Book your first session now and discover
+              the personalized chef experience tailored just for you.
+            </p>
+            <a href="#" class="btn-secondary btn-large">
+              Book your first session
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Booking ends here -->
+      <!-- FAQ starts here -->
+      <section
+        id="faq"
+        class="container mx-auto lg:px-0 md:mb-16 mb-32 lg:mb-40 px-4 md:px-0"
+      >
+        <!-- FAQ container -->
+        <div class="flex flex-col lg:flex-row relative">
+          <!-- FAQ intro and CTA -->
+          <div class="lg:w-1/3 lg:pr-8">
+            <div class="space-y-6 text-center lg:text-left lg:sticky top-16">
+              <h2 class="heading-2 text-neut-950 mb-20 lg:mb-10">
+                Your questions, answered
+              </h2>
+              <!-- Still not convinced starts here -->
+              <div
+                class="px-8 py-8 bg-secondary-100 border border-secondary-200 rounded-3xl hidden lg:block"
+              >
+                <h5 class="heading-5 text-neut-950 mb-4">
+                  Still not convinced?
+                </h5>
+                <p class="text-large text-neut-600 mb-6">
+                  Can’t find the answer you’re looking for? Please chat to our
+                  friendly team
+                </p>
+                <a href="#" class="btn-primary btn-large">Chat with us</a>
+              </div>
+              <!-- Still not convinced ends here -->
+            </div>
+          </div>
+          <!-- FAQ container -->
+          <div
+            class="mx-auto lg:w-2/3 lg:mt-4 lg:pl-8 divide-y divide-neutral-200"
+          >
+            <!-- FAQ 1 starts here -->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4">
+                <h5 class="heading-5 text-neut-950">
+                  What is Cravd and how does it work?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  Cravd connects you with professional home chefs who cook
+                  personalized meals in your kitchen. Share your preferences,
+                  and we’ll match you with the perfect chef—no prep, cooking, or
+                  clean-up required. Our platform provides menu recommendations,
+                  easy scheduling, transparent pricing and much more! Our
+                  customer support is always ready to assist with custom
+                  requests. Don’t hesitate to reach out—we’re here to help!
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 1 ends here -->
+            <!-- FAQ 2 starts here-->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4 mt-6">
+                <h5 class="heading-5 text-neut-950">
+                  Why can't I hire a home chef from Facebook Marketplace?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  While you can find home chefs on platforms like Facebook
+                  Marketplace, it comes with risks and added responsibilities.
+                  These include unverified chefs, inconsistent quality, lack of
+                  safety protocols, and the part-time job of managing schedules,
+                  payments, and menu planning. With Cravd, all chefs are
+                  thoroughly vetted for safety, hygiene, and professionalism. We
+                  also ensure availability with backup chefs ready to step in if
+                  needed. We handle the matching, scheduling, menu
+                  customization, and payments—so you can enjoy the meals without
+                  the hassle of managing a home chef. Leave that to us!
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 2 ends here -->
+            <!-- FAQ 3 starts here-->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4 mt-6">
+                <h5 class="heading-5 text-neut-950">
+                  How do I choose a home chef that fits my preferences?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  After you share your dietary needs and cuisine preferences,
+                  leave the rest to us! We’ll match you with a home chef who
+                  specializes in your requested dishes. You can review their
+                  profiles and customer reviews to ensure it’s the perfect fit.
+                  Occasionally, we’ll provide you with different chef options so
+                  you can enjoy a variety of cooking styles and flavors as well.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 3 ends here -->
+            <!-- FAQ 4 starts here-->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4 mt-6">
+                <h5 class="heading-5 text-neut-950">
+                  Can I customize the menu and ingredients for each session?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  Absolutely! Through our platform, you can easily customize the
+                  menu, specify ingredients, and adjust spice levels to match
+                  your preferences. Our system, Maya, provides tailored menu
+                  recommendations based on your dietary needs. Plus, the
+                  platform captures your preferences over time, making it easier
+                  for home chefs to personalize your meals consistently and
+                  enhance your experience.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 4 ends here -->
+            <!-- FAQ 5 starts here-->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4 mt-6">
+                <h5 class="heading-5 text-neut-950">
+                  How much does Cravd’s service cost, and are there subscription
+                  options?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  Pricing varies based on two factors: the number of dishes per
+                  session and the frequency of sessions each week. All pricing
+                  is designed for households of up to 4 people. After
+                  onboarding, the initial matching session costs only $49. We
+                  offer flexible monthly subscriptions with bi-weekly payments
+                  for easy management. You can check out our transparent pricing
+                  at [LINK].
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 5 ends here -->
+            <!-- FAQ 6 starts here-->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4 mt-6">
+                <h5 class="heading-5 text-neut-950">
+                  What happens during the onboarding and matching process?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  After you submit your requirements, we’ll onboard you and set
+                  up your profile. We’ll then match you with a chef based on
+                  your preferences and schedule a session to ensure everything
+                  is customized to your needs. If necessary, we’ll provide
+                  additional matching sessions until you’re fully satisfied with
+                  your home chef. After that, we’ll work with you to create a
+                  personalized monthly plan that fits your schedule and
+                  preferences.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 6 ends here -->
+            <!-- FAQ 7 starts here-->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4 mt-6">
+                <h5 class="heading-5 text-neut-950">
+                  Are the chefs vetted for quality, safety, and hygiene?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  Absolutely! All Cravd chefs undergo a thorough vetting
+                  process, including background checks and food safety
+                  certifications, to ensure high standards in food quality,
+                  safety, and hygiene.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 7 ends here -->
+            <!-- FAQ 8 starts here-->
+            <div class="mb-6">
+              <div class="flex flex-row justify-between mb-4 mt-6">
+                <h5 class="heading-5 text-neut-950">
+                  Do I need to provide the ingredients, or does the chef bring
+                  them?
+                </h5>
+                <div>
+                  <img src="./asset/accordian-expanded.svg" alt="" />
+                  <img
+                    src="./asset/accordian-collapsed.svg"
+                    alt=""
+                    class="hidden"
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-neut-600 text-large">
+                  Typically, the chef will use the ingredients available in your
+                  kitchen. However, if you prefer, they can help source
+                  ingredients or create a shopping list for you beforehand.
+                  There is an additional cost of $25 per grocery pickup if the
+                  chef needs to handle sourcing the ingredients.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 8 ends here -->
+          </div>
+          <!-- Still not convinced starts here -->
+          <div
+            class="px-8 py-8 bg-secondary-100 border border-secondary-200 rounded-3xl lg:hidden"
+          >
+            <h5 class="heading-5 text-neut-950 mb-4">Still not convinced?</h5>
+            <p class="text-large text-neut-600 mb-6">
+              Can’t find the answer you’re looking for? Please chat to our
+              friendly team
+            </p>
+            <a href="#" class="btn-primary btn-large">Chat with us</a>
+          </div>
+          <!-- Still not convinced ends here -->
+        </div>
+      </section>
+      <!-- FAQ ends here -->
     </main>
-    <footer></footer>
+    <!-- Main ends here -->
+    <!-- Footer starts here -->
+    <footer id="footer" class="bg-primary-500 rounded-3xl rounded-b-none">
+      <!-- Footer container -->
+      <div
+        class="container mx-auto py-20 flex flex-col lg:flex-row justify-between px-4 md:px-0"
+      >
+        <!-- Footer logo and social starts here -->
+        <div class="mb-16 lg:mb-0 lg:w-1/4">
+          <img src="./asset/cravd-logo.svg" alt="Cravd" class="mb-6" />
+          <div>
+            <p class="text-xsmall text-neut-200 mb-6">
+              Copyright Cravd, 2024. All rights reserved
+            </p>
+            <div class="flex flex-row gap-6">
+              <a href="#"><img src="./asset/social-insta.svg" alt="" /></a>
+              <a href="#"><img src="./asset/social-fb.svg" alt="" /></a>
+              <a href="#"><img src="./asset/social-x.svg" alt="" /></a>
+              <a href="#"><img src="./asset/social-linkedin.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <!-- Footer logo and social starts here -->
+        <!-- Footer links container -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:w-3/4">
+          <!-- Footer link section 1 starts here -->
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Learn</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 1 ends here -->
+          <!-- Footer link section 2 starts here -->
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Homechefs</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Browse Homechefs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Become a homechef</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 2 ends here -->
+          <!-- Footer link section 3 starts here -->
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Resources</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Chat with us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Sign in</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Sign up</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 3 ends here -->
+          <!-- Footer link section 4 starts here -->
+
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Legal</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Terms and conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Policies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 4 ends here -->
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
   </body>
 </html>

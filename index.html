@@ -33,7 +33,7 @@
   </head>
   <body class="bg-secondary-50">
     <div
-      class="flex flex-row justify-center items-center gap-2 bg-neutral-50 p-3 rounded-lg fixed bottom-2 z-20 left-1/2 transform -translate-x-1/2 w-[470px] md:w-[500px] shadow-2xl"
+      class="flex flex-row justify-center items-center gap-2 bg-neutral-50 p-3 rounded-lg fixed bottom-2 z-20 left-1/2 transform -translate-x-1/2 w-auto shadow-2xl"
     >
       <a
         href="#why-cravd"
@@ -49,11 +49,6 @@
         href="#pricing"
         class="text-small text-primary-500 font-semibold inline-block px-3 lg:px-4 py-2 border border-primary-500 rounded-lg"
         >Pricing</a
-      >
-      <a
-        href="#testimonials"
-        class="text-small text-primary-500 font-semibold inline-block px-3 lg:px-4 py-2 border border-primary-500 rounded-lg"
-        >Testimonials</a
       >
     </div>
     <header class="bg-primary-500">
@@ -438,7 +433,7 @@
       <!-- Savings stats ends here -->
 
       <!-- Pricing section starts here  -->
-      <section id="pricing" class="bg-primary-500 -mt-[740px] md:-mt-72">
+      <section class="bg-primary-500 -mt-[740px] md:-mt-72">
         <div
           class="container mx-auto lg:px-0 md:mb-16 mb-32 lg:mb-40 px-4 pb-20 md:pb-32 pt-[760px] md:pt-60"
         >
@@ -449,7 +444,10 @@
               <div
                 class="space-y-6 text-center lg:text-left lg:sticky top-16 mb-8 lg:mb-0"
               >
-                <div class="space-y-6 text-center lg:text-left mb-8 md:12">
+                <div
+                  id="pricing"
+                  class="space-y-6 text-center lg:text-left mb-8 md:12"
+                >
                   <h2 class="heading-2 text-neut-50">Pricing</h2>
                   <p class="text-neut-50 text-large">
                     The right price for you, and your family

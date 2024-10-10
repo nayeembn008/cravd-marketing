@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./asset/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./asset/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./asset/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./asset/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- href="../output/css/styles.css" -->
+  </head>
+  <body>
+    <header class="bg-primary-500">
+      <section>
+        <!-- Banner starts here -->
+        <div class="py-3 text-neut-50 text-small bg-primary-900 text-center">
+          Live in Toronto, coming soon in the Bay Area!
+        </div>
+        <!-- Banner ends here -->
+        <!-- Navbar starts here -->
+        <nav class="container mx-auto py-3 md:py-4 px-4 mb-10">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-4">
+              <img src="./asset/cravd-logo.svg" alt="Cravd logo" />
+              <div class="flex justify-center items-center">
+                <img src="./asset/location.svg" alt="" class="h-6 w-6" />
+                <select
+                  class="block bg-transparent py-1.5 pl-1 pr-2 text-neut-50 text-small focus:outline-none"
+                  name="service_area_id"
+                  id="service_area_id"
+                >
+                  <option selected="selected" value="1">
+                    Greater Toronto Area
+                  </option>
+                  <option value="2">Bay Area</option>
+                </select>
+              </div>
+            </div>
+            <div class="hidden lg:block">
+              <ul class="flex items-center gap-6">
+                <li>
+                  <a
+                    href="#"
+                    class="text-regular text-neutral-50 hover:underline"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-regular text-neutral-50 hover:underline"
+                    >Become a homechef</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <button class="btn-tertiary btn-medium">
+                      <span>Sign in</span>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <button class="btn-secondary btn-medium">
+                      <span>Get started</span>
+                      <svg
+                        class="fill-primary-500"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.7 11.29L14.7 6.29C14.31 5.9 13.68 5.9 13.29 6.29C12.9 6.68 12.9 7.31 13.29 7.7L16.58 10.99H5.01001C4.46001 10.99 4.01001 11.44 4.01001 11.99C4.01001 12.54 4.46001 12.99 5.01001 12.99H16.57L13.28 16.28C12.89 16.67 12.89 17.3 13.28 17.69C13.48 17.89 13.73 17.98 13.99 17.98C14.25 17.98 14.5 17.88 14.7 17.69L19.7 12.69C20.09 12.3 20.09 11.67 19.7 11.28V11.29Z"
+                        />
+                      </svg>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="block lg:hidden">
+              <img src="./asset/menu.svg" alt="" />
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar ends here -->
+        <!-- hero section starts here -->
+        <div
+          class="container mx-auto h-[340px] md:h-[500px] lg:h-[600px] xl:h-[460px] 2xl:h-[500px] mb-[140px] md:mb-[160px] lg:mb-[260px] xl:mb-[180px] 2xl:mb-[260px]"
+        >
+          <div
+            class="flex flex-col xl:flex-row justify-between relative px-4 mb-32 md:mb-40 w-full"
+          >
+            <!-- hero image desktop -->
+            <div class="hidden xl:block w-full">
+              <img src="./img/about-us-hero.webp" alt="" class="w-full" />
+            </div>
+            <!-- Hero image mobile -->
+            <div class="xl:hidden w-full">
+              <img
+                src="./img/about-us-hero-mobile.webp"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-auto">
+      <section
+        id="intro"
+        class="lg:w-5/6 mx-auto flex flex-col lg:flex-row gap-8 lg:justify-center lg:items-center mb-40 px-4"
+      >
+        <h2 class="text-neutral-950 heading-2">
+          The future of food is homemade.
+        </h2>
+        <p class="text-large text-neut-600">
+          Everyone knows they should eat better. So why don't they? It's not
+          laziness. It's the lack of time, knowledge, and access to quality
+          food. We're changing that. The future of food is personalized. And
+          homemade. Get Cravd.
+        </p>
+      </section>
+      <section
+        class="flex flex-col lg:flex-row justify-center items-center gap-12 mb-40 px-4"
+      >
+        <div class="w-full lg:w-1/2">
+          <img src="./img/how-it-all-started.webp" alt="" class="w-full" />
+        </div>
+        <div class="lg:w-1/2">
+          <h2 class="heading-2 text-neut-950 mb-8">How it all started</h2>
+          <div class="space-y-6">
+            <p class="text-large text-neut-600">
+              Cravd was born from the shared experience of two college mates who
+              became dads, realizing the struggle busy families face in finding
+              time, energy, or even interest to cook daily meals. Cooking is
+              becoming a heavy burden. Yet, every household deserves
+              personalized, healthy, home-cooked meals.
+            </p>
+            <p class="text-large text-neut-600">
+              Every day, our dedicated home chefs visit customers' homes to
+              prepare meals that not only nourish but also cater to each
+              family's unique preferences, ensuring everyone enjoys the comfort
+              of a personalized home-cooked experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="values" class="mb-40 px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-y-16">
+          <div>
+            <h2 class="heading-2 text-neutral-950 lg:mr-10 mb-12 lg:mb-0">
+              Values that we strive for
+            </h2>
+          </div>
+          <div class="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <img
+                src="./asset/product.svg"
+                alt=""
+                class="mx-auto mb-6 md:mb-12 md:mx-0 h-32 w-32"
+              />
+              <div class="text-center md:text-left">
+                <h5 class="heading-5 text-neut-950 mb-4">Product at Core</h5>
+                <p class="text-large text-neut-600">
+                  Our mission is to go beyond utility, sparking joy and
+                  delivering real value with product. We design with the user in
+                  mind, ensuring that every interaction is meaningful,
+                  intuitive, and leaves a smile!
+                </p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="./asset/nice.svg"
+                alt=""
+                class="mx-auto mb-6 md:mb-12 md:mx-0 h-32 w-32"
+              />
+              <div class="text-center md:text-left">
+                <h5 class="heading-5 text-neut-950 mb-4">Being Nice</h5>
+                <p class="text-large text-neut-600">
+                  We default to kindness and respect in every interaction. It’s
+                  about choosing empathy, practicing patience, and creating a
+                  culture where being nice isn’t just encouraged—it’s our
+                  natural instinct.
+                </p>
+              </div>
+            </div>
+            <div class="text-center md:text-left">
+              <img
+                src="./asset/focus.svg"
+                alt=""
+                class="mx-auto mb-6 md:mb-12 md:mx-0 h-32 w-32"
+              />
+              <div>
+                <h5 class="heading-5 text-neut-950 mb-4">Focus and Execute</h5>
+                <p class="text-large text-neut-600">
+                  We focus on action and rapid learning, using each experience
+                  to drive growth. By building, testing, and refining quickly,
+                  we ensure every step brings us closer to bigger impact.
+                </p>
+              </div>
+            </div>
+            <div class="text-center md:text-left">
+              <img
+                src="./asset/sports team.svg"
+                alt=""
+                class="mx-auto mb-6 md:mb-12 md:mx-0 h-32 w-32"
+              />
+              <div>
+                <h5 class="heading-5 text-neut-950 mb-4">
+                  All for One, One for All
+                </h5>
+                <p class="text-large text-neut-600">
+                  We push together for collective success. When one of us wins,
+                  we all win; when one of us struggles, we all step in to help.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-40 px-4" id="founders-intro">
+        <h2 class="heading-2 text-neut-950 text-center mb-16">
+          Meet the founders
+        </h2>
+        <div class="space-y-12">
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-8"
+          >
+            <div class="w-full lg:w-2/5">
+              <img src="./img/founder-ajith.webp" alt="" class="w-full" />
+            </div>
+            <div class="lg:w-3/5">
+              <h4 class="heading-4 text-neut-950 mb-2">Ajith Govind</h4>
+              <span class="text-regular text-neut-400">Co-Founder & CEO</span>
+              <p class="text-large text-neut-600 mt-6 mb-8">
+                Ajith is a serial entrepreneur, YC alum, and data science
+                expert, with experience leading a previous startup to Series A.
+                He thrives on solving real-world problems through technology and
+                bringing ambitious ideas to life. Outside of work, you'll find
+                him playing soccer with his 2-year-old or exploring great food
+                with his wife.
+              </p>
+              <p
+                class="flex flex-row gap-4 items-center text-large text-neut-600"
+              >
+                Connect on:
+                <a href="https://www.linkedin.com/in/ajith-govind/"
+                  ><img src="./asset/social-linkedin-color.svg" alt=""
+                /></a>
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-8"
+          >
+            <div class="lg:w-3/5 order-2">
+              <h4 class="heading-4 text-neut-950 mb-2">Avinash Joshi</h4>
+              <span class="text-regular text-neut-400">Co-Founder & CTO</span>
+              <p class="text-large text-neut-600 mt-6 mb-8">
+                Avinash is a tech enthusiast with a passion for building
+                impactful products and elegant solutions. A winner of Sun
+                Microsystems' Code For Freedom contest, he founded his
+                university's Open Source club, mentoring 100+ students. Outside
+                of work, he enjoys road trips with his family and tinkering with
+                the latest tech gadgets.
+              </p>
+              <p
+                class="flex flex-row gap-4 items-center text-large text-neut-600"
+              >
+                Connect on:
+                <a href="https://www.linkedin.com/in/joshi-avinash/"
+                  ><img src="./asset/social-linkedin-color.svg" alt=""
+                /></a>
+              </p>
+            </div>
+            <div class="w-full lg:w-2/5 order-1 lg:order-2">
+              <img src="./img/founder-avinash.webp" alt="" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="join-team" class="mb-40 px-4">
+        <div class="bg-primary-50 border border-primary-100 rounded-3xl">
+          <div class="text-center py-16 px-10 lg:py-16 lg:w-3/4 mx-auto">
+            <h2 class="heading-2 text-neut-950 mb-6">Join our team</h2>
+            <div class="space-y-4">
+              <p class="text-neut-600 text-large">
+                We're always on the lookout for talented individuals who share
+                our passion for creating impactful products and solutions. Here,
+                we set ambitious goals, offer generous and transparent
+                compensation, and focus on creating an environment where you can
+                perform at your best. We're committed to supporting each other's
+                growth while pushing for collective success.
+              </p>
+              <p class="text-neut-600 text-large">
+                Interested? Reach out to us at
+                <a
+                  href="mailto:join@cravd.com"
+                  class="font-bold text-primary-500"
+                  >join@cravd.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="build-cravd" class="mb-40 px-4">
+        <div class="lg:w-5/6 lg:mx-auto">
+          <h2 class="heading-2 text-neut-950 mb-12">
+            The Day We Knew We Had to Do Cravd
+          </h2>
+          <div class="text-neut-600 text-large space-y-4">
+            <p>
+              At Legoland with our kids, we overheard a lively conversation
+              between homemakers about meal solutions they’d tried—meal kits,
+              home chefs, restaurant orders. "I've tried them all," one said.
+              "The novelty wears off, meals aren't personal, and there's so much
+              waste." Another added, "Hiring a chef sounds great, but
+              coordinating is a hassle, and hourly rates are unpredictable."
+            </p>
+            <p>
+              Then came the magic words: "Why isn't there a platform to book
+              home chefs online?"
+            </p>
+            <p>That sealed the deal for us.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main ends here -->
+    <!-- Footer starts here -->
+    <footer id="footer" class="bg-primary-500 rounded-3xl rounded-b-none">
+      <!-- Footer container -->
+      <div
+        class="container mx-auto py-20 flex flex-col lg:flex-row justify-between px-4"
+      >
+        <!-- Footer logo and social starts here -->
+        <div class="mb-16 lg:mb-0 lg:w-1/4">
+          <img src="./asset/cravd-logo.svg" alt="Cravd" class="mb-6" />
+          <div>
+            <p class="text-xsmall text-neut-200 mb-6">
+              Copyright Cravd, 2024. All rights reserved
+            </p>
+            <div class="flex flex-row gap-6">
+              <a href="https://www.instagram.com/getcravd" target="_blank"
+                ><img src="./asset/social-insta.svg" alt=""
+              /></a>
+              <a href="https://www.facebook.com/getcravd" target="_blank"
+                ><img src="./asset/social-fb.svg" alt=""
+              /></a>
+              <a href="https://x.com/getcravd" target="_blank"
+                ><img src="./asset/social-x.svg" alt=""
+              /></a>
+              <a href="https://www.linkedin.com/company/cravd/" target="_blank"
+                ><img src="./asset/social-linkedin.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- Footer logo and social starts here -->
+        <!-- Footer links container -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:w-3/4">
+          <!-- Footer link section 1 starts here -->
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Learn</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 1 ends here -->
+          <!-- Footer link section 2 starts here -->
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Homechefs</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Browse Homechefs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Become a homechef</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 2 ends here -->
+          <!-- Footer link section 3 starts here -->
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Resources</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Chat with us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Sign in</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Sign up</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 3 ends here -->
+          <!-- Footer link section 4 starts here -->
+
+          <div>
+            <h3 class="text-small font-semibold text-primary-200">Legal</h3>
+            <ul class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Terms and conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-regular text-neutral-50 hover:underline"
+                  >Policies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer link section 4 ends here -->
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+  </body>
+</html>
